@@ -44,8 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ClickHandler.cs" />
      <Compile Include="Assets\Scripts\Controller2D.cs" />
+     <Compile Include="Assets\Scripts\EventManager\EventManager.cs" />
+     <Compile Include="Assets\Scripts\EventManager\EventPF.cs" />
      <Compile Include="Assets\Scripts\LinearMoveBehavior.cs" />
+     <Compile Include="Assets\Scripts\OnClickGoToScene.cs" />
+     <Compile Include="Assets\Scripts\RUI\RUIManager.cs" />
+     <Compile Include="Assets\Scripts\RUI\RUISpriteButton.cs" />
+     <Compile Include="Assets\Scripts\RUI\SpriteUtility.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\Player.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\ScrollView.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\SpAnimEventHandle.cs" />

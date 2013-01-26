@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controller2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LinearMoveBehavior.cs">
     <Files>
-      <File FileName="Assets\Scripts\LinearMoveBehavior.cs" Line="15" Column="42" />
-      <File FileName="Assets\Scripts\Controller2D.cs" Line="44" Column="32" />
+      <File FileName="Assets\Scripts\LinearMoveBehavior.cs" Line="16" Column="55" />
+      <File FileName="Assets\Scripts\Controller2D.cs" Line="15" Column="55" />
+      <File FileName="Assets\Scripts\ClickHandler.cs" Line="29" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

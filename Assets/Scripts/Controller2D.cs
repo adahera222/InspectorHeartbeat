@@ -8,8 +8,6 @@ public class Controller2D : MonoBehaviour {
 	protected exSprite spriteObj;
     protected exSpriteAnimation spriteAnimation;
 	
-	private int direction = 0;
-	
 	// Use this for initialization
 	void Start () {
 		myTransform = transform;
