@@ -10,6 +10,8 @@ public class LinearMoveBehavior : MonoBehaviour {
 	protected exSprite spriteObj;
     protected exSpriteAnimation spriteAnimation;
 	
+	protected float bounceTimeOut = 0;
+	
 	// Use this for initialization
 	void Start () {
 		myTransform = transform;
@@ -27,6 +29,9 @@ public class LinearMoveBehavior : MonoBehaviour {
 		if (speed < 0 && spriteObj.isHFlipped) {
 				spriteObj.HFlip();
 		}
+		if (bounceTimeOut > 0) {
+			bounceTimeOut -= Time.deltaTime;
+		}
 	}
 	
 	void OnDrawGizmosSelected() {
@@ -37,8 +42,10 @@ public class LinearMoveBehavior : MonoBehaviour {
 	
 	
 	void OnBecameInvisible () {
-		if (bounce) {
+		if (bounce && bounceTimeOut <= 0) {
     		speed = speed * -1;
+			myTransform.Translate(new Vector3(speed * 5, 0, 0));
+			bounceTimeOut = 1;
 		}
 	}
 }

@@ -48,8 +48,11 @@
      <Compile Include="Assets\Scripts\Controller2D.cs" />
      <Compile Include="Assets\Scripts\EventManager\EventManager.cs" />
      <Compile Include="Assets\Scripts\EventManager\EventPF.cs" />
+     <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\LinearMoveBehavior.cs" />
      <Compile Include="Assets\Scripts\MaintainRelativeZ.cs" />
+     <Compile Include="Assets\Scripts\MicHandle.cs" />
+     <Compile Include="Assets\Scripts\MicInput.cs" />
      <Compile Include="Assets\Scripts\OnClickGoToScene.cs" />
      <Compile Include="Assets\Scripts\RUI\RUIManager.cs" />
      <Compile Include="Assets\Scripts\RUI\RUISpriteButton.cs" />
