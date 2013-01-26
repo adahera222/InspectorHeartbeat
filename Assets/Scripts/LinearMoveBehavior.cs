@@ -4,8 +4,9 @@ using System.Collections;
 public class LinearMoveBehavior : MonoBehaviour {
 	
 	public float speed = 1;
-	protected Transform myTransform;
+	public bool bounce = false;
 	
+	protected Transform myTransform;
 	protected exSprite spriteObj;
     protected exSpriteAnimation spriteAnimation;
 	
@@ -25,6 +26,19 @@ public class LinearMoveBehavior : MonoBehaviour {
 		}
 		if (speed < 0 && spriteObj.isHFlipped) {
 				spriteObj.HFlip();
+		}
+	}
+	
+	void OnDrawGizmosSelected() {
+		Gizmos.color = Color.cyan;
+    	Vector3 direction = transform.TransformDirection (new Vector3(speed * 100, 0, 0));
+		Gizmos.DrawRay (transform.position, direction);
+	}
+	
+	
+	void OnBecameInvisible () {
+		if (bounce) {
+    		speed = speed * -1;
 		}
 	}
 }

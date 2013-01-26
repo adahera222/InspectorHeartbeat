@@ -17,11 +17,11 @@ public class ClickHandler : MonoBehaviour {
 	void OnMouseDown() {
 		if (isAlien) {
 			// Ganamo
-			Debug.Log("Ganaste!");
+			Application.LoadLevel("winScene");
 		}
 		else {
 			// Perdimo
-			Debug.Log("Perdiste!");
+			Application.LoadLevel("loseScene");
 		}
 	}
 
