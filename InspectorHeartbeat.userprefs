@@ -1,15 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClickHandler.cs">
-    <Files>
-      <File FileName="Assets\Scripts\LinearMoveBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ClickHandler.cs" Line="101" Column="3" />
-      <File FileName="Assets\Scripts\Controller2D.cs" Line="77" Column="46" />
-      <File FileName="Assets\Scripts\MaintainRelativeZ.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\OnClickGoToScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MicInput.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

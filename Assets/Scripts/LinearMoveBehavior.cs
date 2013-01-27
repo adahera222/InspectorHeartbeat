@@ -4,7 +4,9 @@ using System.Collections;
 public class LinearMoveBehavior : MonoBehaviour {
 	
 	public float speed = 1;
+	public float ySpeed = 0;
 	public bool bounce = false;
+	public bool loopY = false;
 	
 	protected Transform myTransform;
 	protected exSprite spriteObj;
@@ -21,7 +23,7 @@ public class LinearMoveBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.myTransform.Translate(new Vector3(speed, 0, 0));
+		this.myTransform.Translate(new Vector3(speed, ySpeed, 0));
 		
 		if (speed > 0 && !spriteObj.isHFlipped) {
 				spriteObj.HFlip();
@@ -46,6 +48,9 @@ public class LinearMoveBehavior : MonoBehaviour {
     		speed = speed * -1;
 			myTransform.Translate(new Vector3(speed * 5, 0, 0));
 			bounceTimeOut = 1;
+		}
+		if (loopY) {
+			myTransform.position = new Vector3(transform.position.x, -200, transform.position.z);
 		}
 	}
 }

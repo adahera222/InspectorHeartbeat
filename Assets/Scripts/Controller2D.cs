@@ -10,6 +10,7 @@ public class Controller2D : MonoBehaviour {
 	protected exSprite spriteObj;
     protected exSpriteAnimation spriteAnimation;
 	protected bool failing = false;
+	protected bool wasMoving = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -50,14 +51,18 @@ public class Controller2D : MonoBehaviour {
 				animName = anim.name;
 			}
 			if (mov.x == 0 &&  mov.y == 0) {
-				spriteAnimation.Pause();
-				if (animName != "InspectorAnimationIdle") {
+				//spriteAnimation.Pause();
+				if (wasMoving && animName != "InspectorAnimationIdle") {
 					spriteAnimation.Play("InspectorAnimationIdle");
+					wasMoving = false;
 				}
 			} 
-			else if (animName != "InspectorAnimationMoving") {
-				spriteAnimation.Play("InspectorAnimationMoving");
-				//spriteAnimation.Resume();
+			else {
+				wasMoving = true;
+				if (animName != "InspectorAnimationMoving") {
+					spriteAnimation.Play("InspectorAnimationMoving");
+					//spriteAnimation.Resume();
+				}
 			}
 			
 			// Handle clicks
